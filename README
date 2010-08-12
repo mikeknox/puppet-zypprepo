@@ -21,7 +21,7 @@ Usage:
         type         => "yast2",
         path         => "/",
         keeppackages => 0,
-        baseurl      => "http://<host>/<repo>",
+        baseurl      => "http://somehost/somerepo",
         enabled      => 1,
     }
 
