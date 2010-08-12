@@ -1,0 +1,27 @@
+
+zypprepo type, similiar to/derived from yumrepo.
+
+Derived by Michael Knox (mike _at_ sysam.com.au) from the yumrepo type
+from puppet 0.25.5
+
+This script is free software; you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation; either version 2 of the License,
+or any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+Usage:
+    zypprepo {"repo_name":
+        descr        => "Test repo for packages",
+        autorefresh  => 0,
+        type         => "yast2",
+        path         => "/",
+        keeppackages => 0,
+        baseurl      => "http://<host>/<repo>",
+        enabled      => 1,
+    }
+
